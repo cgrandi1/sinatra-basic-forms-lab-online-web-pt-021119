@@ -19,7 +19,6 @@ class App < Sinatra::Base
     @name = Puppy.new(params[:name])
     @breed = Puppy.new(params[:breed])
     @age = Puppy.new(params[:age])
-    binding.pry
 
     erb :display_puppy
 
